@@ -1,0 +1,5 @@
+1. Zainstalowaæ node.js
+2. W³¹czyæ install.bat (w folderze)
+3. W start.bat zmieniæ œcie¿ke do folderu
+4. W plikach server.js i connection.js zmienic ip na lokalne ip komputera
+5. Odpaliæ start.bat

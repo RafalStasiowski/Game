@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Gra</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="socket-source.js"></script>
+    <script src="map.js"></script>
+</head>
+
+<body>
+    <div id="namescreen">
+        <div id="log">
+            <p style="font-size: 20px; font-weight: bolder">Nazwa:</p>
+            <input id="nick" type="text" placeholder="Wpisz swoją nazwe..."><br>
+            <div id="selectTeam">
+                <p style="font-size: 20px; font-weight: bolder">Wybierz drużynę</p>
+                <div id="team">
+                    <button id="buleJoin" onclick="chooseTeam(1)">Niebiescy</button>
+                    <button id="redJoin" onclick="chooseTeam(2)">Czerwoni</button>
+                </div>
+            </div>
+            <br>
+            <button id="ready" onclick="validate()">Uruchom</button>
+        </div>
+    </div>
+    <div id="box">
+        <canvas id="canvas" height="600" width="800"></canvas>
+        <div id="chat">
+            <div id="message-box"></div>
+            <input id="message-input" type="text">
+            <button id="message-send">Wyślij</button>
+        </div>
+    </div>
+    <script src="connection.js"></script>
+    <script src="gra.js"></script>
+</body>
+
+</html>
